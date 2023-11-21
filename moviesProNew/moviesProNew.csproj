@@ -203,12 +203,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202311011036082_InitalModel.cs" />
-    <Compile Include="Migrations\202311011036082_InitalModel.designer.cs">
-      <DependentUpon>202311011036082_InitalModel.cs</DependentUpon>
+    <Compile Include="Migrations\202311011213311_InitalModel.cs" />
+    <Compile Include="Migrations\202311011213311_InitalModel.designer.cs">
+      <DependentUpon>202311011213311_InitalModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311011331204_AddIsSubscribedToNewsLetter.cs" />
+    <Compile Include="Migrations\202311011331204_AddIsSubscribedToNewsLetter.designer.cs">
+      <DependentUpon>202311011331204_AddIsSubscribedToNewsLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311020441116_AddMembershipType.cs" />
+    <Compile Include="Migrations\202311020441116_AddMembershipType.designer.cs">
+      <DependentUpon>202311020441116_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311020616164_PopulateMembershipType.cs" />
+    <Compile Include="Migrations\202311020616164_PopulateMembershipType.designer.cs">
+      <DependentUpon>202311020616164_PopulateMembershipType.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\MyDbContext .cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -271,8 +284,17 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202311011036082_InitalModel.resx">
-      <DependentUpon>202311011036082_InitalModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202311011213311_InitalModel.resx">
+      <DependentUpon>202311011213311_InitalModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311011331204_AddIsSubscribedToNewsLetter.resx">
+      <DependentUpon>202311011331204_AddIsSubscribedToNewsLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311020441116_AddMembershipType.resx">
+      <DependentUpon>202311020441116_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311020616164_PopulateMembershipType.resx">
+      <DependentUpon>202311020616164_PopulateMembershipType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -17,17 +17,18 @@ namespace moviesProNew.Controllers
         }
         public ActionResult Details(int id)
         {
-            var cus = GetCustomers().SingleOrDefault(c=> c.Id == id);   
+            var cus = GetCustomers().SingleOrDefault(c => c.Id == id);
             return View(cus);
         }
 
         private List<Customer> GetCustomers()
         {
-           return new List<Customer> 
+            return new List<Customer>
             {
                 new Customer(){Id= 1, CName="Yash"},
                 new Customer(){Id=2, CName="Ravi"},
                 new Customer(){Id=999, CName="Miral"}
-            };        }
+            };
+        }
     }
 }
